@@ -1,8 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://xfdek568835n"]
+[gd_scene load_steps=12 format=3 uid="uid://xfdek568835n"]
 
 [ext_resource type="PackedScene" uid="uid://ddt2jrub87b0l" path="res://scenes/enemy_test.tscn" id="1_sj8la"]
 [ext_resource type="PackedScene" uid="uid://bxnd1wjqw7e0h" path="res://scenes/Character.tscn" id="1_tsuls"]
-[ext_resource type="AudioStream" uid="uid://blt3pb4bexck0" path="res://assets/Muisc/JULIO JARAMILLO - ECUADOR.mp3" id="3_e57ou"]
 [ext_resource type="Script" path="res://Scripts/muisc_test.gd" id="4_52ck1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_d857d"]
@@ -82,7 +81,6 @@ player_path = NodePath("../../player")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.96893, 2.52573, 8.04179)
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("3_e57ou")
 volume_db = 65.701
 autoplay = true
 script = ExtResource("4_52ck1")
