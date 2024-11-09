@@ -5,7 +5,7 @@ extends CharacterBody3D
 @onready var animation = $head/Sprite2D/AnimationPlayer
 
 var current_speed = 5.0
-# 0ijiophjopjnerag jklnergradgjdfg
+#99999999999999999999999999999
 var shoot = true
 var walking_speed = 8.0
 const sprint_speed = 15.0
