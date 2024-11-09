@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://d4bbnem5ibpgj"]
+
+[ext_resource type="Script" path="res://Scripts/Bullet.gd" id="1_n86y8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hgt2x"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rrk5f"]
+albedo_color = Color(0.782544, 0.710256, 0.540105, 1)
+emission_enabled = true
+emission = Color(0.00392157, 0, 0.960784, 1)
+emission_energy_multiplier = 9.47
+
+[node name="Bullet" type="Node3D"]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, -1.68494)
+script = ExtResource("1_n86y8")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+
+[node name="Cube" type="CSGMesh3D" parent="CharacterBody3D"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 23.0387, 0, 0, 1.30322)
+use_collision = true
+mesh = SubResource("BoxMesh_hgt2x")
+material = SubResource("StandardMaterial3D_rrk5f")
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="CharacterBody3D"]
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1.24035, 0, 0, 0, 1.24035, 0, 0, 0, 6.65809, 0, 0, 0.130539)
+target_position = Vector3(0, 0, -1)

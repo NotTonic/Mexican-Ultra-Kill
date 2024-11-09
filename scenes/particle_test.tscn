@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfq20vjixew8x"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_6osnd"]
+
+[sub_resource type="Curve" id="Curve_sunss"]
+min_value = -200.0
+max_value = 200.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.255591, -131.21), 0.0, 0.0, 0, 0, Vector2(0.613419, 41.0191), 0.0, 0.0, 0, 0, Vector2(0.811502, 31.0828), 0.0, 0.0, 0, 0, Vector2(0.99999, 200), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 6
+
+[node name="particle test" type="Node3D"]
+
+[node name="CPUParticles3D" type="CPUParticles3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+mesh = SubResource("SphereMesh_6osnd")
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+gravity = Vector3(0, -100, 0)
+angular_velocity_min = -650.52
+angular_velocity_max = 563.43
+tangential_accel_min = -0.2
+tangential_accel_max = 4.35
+tangential_accel_curve = SubResource("Curve_sunss")
