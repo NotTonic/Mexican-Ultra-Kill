@@ -1,5 +1,7 @@
-res://scenes/Character.tscn
-res://Scripts/player.gd
+res://scenes/bullet.tscn
+res://Scripts/Bullet.gd
 res://scenes/test.tscn
+res://scenes/Character.tscn
 res://scenes/enemy_test.tscn
 res://scenes/particle_test.tscn
+res://Scripts/player.gd

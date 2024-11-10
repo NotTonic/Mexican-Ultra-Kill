@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731216537
+::res://::1731264943
 export_presets.cfg::TextFile::-1::1731122630::0::1::::<><>::
 ::res://assets/::1731216537
 Chicken.glb::PackedScene::1281290233248086896::1731122630::1731216204::1::::<><>::
@@ -14,18 +14,18 @@ Screenshot_4-11-2024_214132_.jpeg::CompressedTexture2D::6649342869939671610::173
 Screenshot_4-11-2024_214146_.jpeg::CompressedTexture2D::7916017232731566607::1731122630::1731216200::1::::<><>::
 Screenshot_4-11-2024_214212_.jpeg::CompressedTexture2D::6176113482817399394::1731122630::1731216200::1::::<><>::
 SpriteSheet1.png::CompressedTexture2D::1054800648777705440::1731122630::1731216204::1::::<><>::
-::res://scenes/::1731216447
+::res://scenes/::1731217159
 bullet.tscn::PackedScene::9196887056654696025::1731122630::0::1::::<><>::res://Scripts/Bullet.gd
-Character.tscn::PackedScene::4027830749965021961::1731122630::0::1::::<><>::res://Scripts/player.gd<>res://Scripts/RayCast3D.gd<>uid://pa7oa66t5rcy::::res://assets/Draw/GunSprite Test/SpriteSheet1.png<>uid://ct35m6x330d02::::res://assets/Draw/New Piskel-1.png.png
+Character.tscn::PackedScene::4027830749965021961::1731217159::0::1::::<><>::res://Scripts/player.gd<>res://Scripts/RayCast3D.gd<>uid://pa7oa66t5rcy::::res://assets/Draw/GunSprite Test/SpriteSheet1.png<>uid://ct35m6x330d02::::res://assets/Draw/New Piskel-1.png.png
 CrossHairTest.gd::GDScript::-1::1731216276::0::1::::<>TextureRect<>::
-enemy_test.tscn::PackedScene::7410708114154209681::1731122630::0::1::::<><>::
-particle_test.tscn::PackedScene::7544921434274734113::1731122630::0::1::::<><>::
-test.tscn::PackedScene::1624855159630524273::1731123955::0::1::::<><>::uid://ddt2jrub87b0l::::res://scenes/enemy_test.tscn<>uid://bxnd1wjqw7e0h::::res://scenes/Character.tscn<>res://Scripts/muisc_test.gd
-::res://Scripts/::1731123929
+enemy_test.tscn::PackedScene::7410708114154209681::1731217152::0::1::::<><>::
+particle_test.tscn::PackedScene::7544921434274734113::1731217152::0::1::::<><>::
+test.tscn::PackedScene::1624855159630524273::1731217152::0::1::::<><>::uid://ddt2jrub87b0l::::res://scenes/enemy_test.tscn<>uid://bxnd1wjqw7e0h::::res://scenes/Character.tscn<>res://Scripts/muisc_test.gd
+::res://Scripts/::1731264843
 Bullet.gd::GDScript::-1::1731122630::0::1::::<>Node3D<>::
 enemy_test.gd::GDScript::-1::1731122630::0::1::::<>CharacterBody3D<>::
 muisc_test.gd::GDScript::-1::1731122630::0::1::::<>AudioStreamPlayer3D<>::
 PauseMenu.gd::GDScript::-1::1731122630::0::1::::<>ColorRect<>::
-player.gd::GDScript::-1::1731123929::0::1::::<>CharacterBody3D<>::
+player.gd::GDScript::-1::1731264843::0::1::::<>CharacterBody3D<>::
 RayCast3D.gd::GDScript::-1::1731122630::0::1::::<>RayCast3D<>::
 TestBox.gd::GDScript::-1::1731122630::0::1::::<>CSGBox3D<>::

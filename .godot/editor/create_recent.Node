@@ -1,0 +1,5 @@
+CollisionShape3D
+Area3D
+RayCast3D
+MeshInstance3D
+RigidBody3D

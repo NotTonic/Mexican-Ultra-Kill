@@ -1,29 +1,30 @@
-[gd_scene load_steps=4 format=3 uid="uid://d4bbnem5ibpgj"]
+[gd_scene load_steps=6 format=3 uid="uid://d4bbnem5ibpgj"]
 
 [ext_resource type="Script" path="res://Scripts/Bullet.gd" id="1_n86y8"]
+[ext_resource type="Script" path="res://Scripts/RayCast3D.gd" id="2_a1cfi"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_hgt2x"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_1aeqp"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rrk5f"]
-albedo_color = Color(0.782544, 0.710256, 0.540105, 1)
-emission_enabled = true
-emission = Color(0.00392157, 0, 0.960784, 1)
-emission_energy_multiplier = 9.47
+[sub_resource type="BoxMesh" id="BoxMesh_1fvc0"]
 
-[node name="Bullet" type="Node3D"]
-transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, -1.68494)
+[sub_resource type="BoxShape3D" id="BoxShape3D_etwar"]
+
+[node name="Bullet" type="RigidBody3D"]
 script = ExtResource("1_n86y8")
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_1aeqp")
 
-[node name="Cube" type="CSGMesh3D" parent="CharacterBody3D"]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 23.0387, 0, 0, 1.30322)
-use_collision = true
-mesh = SubResource("BoxMesh_hgt2x")
-material = SubResource("StandardMaterial3D_rrk5f")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+transform = Transform3D(0.275614, 0, 0, 0, 0.273801, 0, 0, 0, 2.34046, 0, 0, 0)
+mesh = SubResource("BoxMesh_1fvc0")
+skeleton = NodePath("../..")
 
-[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="CharacterBody3D"]
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_etwar")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(1.24035, 0, 0, 0, 1.24035, 0, 0, 0, 6.65809, 0, 0, 0.130539)
-target_position = Vector3(0, 0, -1)
+script = ExtResource("2_a1cfi")

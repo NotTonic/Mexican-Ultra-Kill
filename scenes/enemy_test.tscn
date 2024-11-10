@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://ddt2jrub87b0l"]
+[gd_scene load_steps=11 format=4 uid="uid://ddt2jrub87b0l"]
 
 [sub_resource type="GDScript" id="GDScript_wwgxw"]
 script/source = "extends CharacterBody3D
@@ -6,7 +6,7 @@ script/source = "extends CharacterBody3D
 var player = null
 
 const SPEED = 5.0
-
+var health = 100
 @export var player_path : NodePath
 
 @onready var nav_agent = $NavigationAgent3D
@@ -29,10 +29,14 @@ func _process(_delta):
 	
 
 	move_and_slide()
+
+	if health == 0:
+		get_tree().quit()
+func _on_area_3d_area_entered(area: Area3D) -> void:
+	health -= 20
 "
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_4i3e7"]
-size = Vector3(1, 0.988098, 0.918839)
+[sub_resource type="SphereShape3D" id="SphereShape3D_tbg2r"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hu7y1"]
 resource_name = "FF9800"
@@ -183,6 +187,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_x3l7s")
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_f6qr7"]
+
 [node name="EnemyTest" type="CharacterBody3D"]
 script = SubResource("GDScript_wwgxw")
 
@@ -190,9 +196,16 @@ script = SubResource("GDScript_wwgxw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00595093, 0.0156631)
-shape = SubResource("BoxShape3D_4i3e7")
+shape = SubResource("SphereShape3D_tbg2r")
 
 [node name="Chicken" type="MeshInstance3D" parent="."]
 transform = Transform3D(5.96244e-11, 0, -0.005, 0, 0.005, 0, 0.005, 0, 5.96244e-11, 0, -0.509336, 0)
 mesh = SubResource("ArrayMesh_cirxs")
 skeleton = NodePath("")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_f6qr7")
+
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]

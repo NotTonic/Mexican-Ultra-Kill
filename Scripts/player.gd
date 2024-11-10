@@ -18,8 +18,10 @@ var gravity = 9.3
 var dashing = false
 var dashes = 3.0
 #bullet
+var bullet_deletion = false
 var bullet = load("res://scenes/bullet.tscn")
 var instance
+var shots = 1.0
 var shot = false
 var cooldown = true
 var jumps = 2
@@ -41,41 +43,29 @@ func _input(event):
 	
 func _physics_process(delta):
 	#my own inputs
-	if Input.is_action_pressed("shoot") and cooldown == true:
-		shot = true
-	if shot == true:
-		cooldown = false
-		
+	if Input.is_action_just_pressed("shoot"):
+		animation.play("shoot")
+		shots -=1
 		instance = bullet.instantiate()
 		instance.position = hand_gun.global_position
 		instance.transform.basis = hand_gun.global_transform.basis
-		
-		animation.play("shoot")
-		
 		get_parent().add_child(instance)
-		await get_tree().create_timer(1.0).timeout
-		get_parent().remove_child(instance)
-		cooldown = true
-		
-	if shot == true:
-		
-		animation.play("shoot")
+		bullet_deletion = true
+	if shots < 1:
+		shots += 0.055
 		shot = false
-	else:
+	elif shot == false:
 		animation.play("RESET")
+	
+
 	if dashes < 3:
 		dashes+=0.01
-		print(dashes)
 		
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 	else:
 		jumps=2
-		
-		
-		
-		
 		
 	
 	if Input.is_action_just_pressed("ui_accept") and jumps > 0:
