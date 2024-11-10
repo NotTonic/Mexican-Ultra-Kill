@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://xfdek568835n"]
+[gd_scene load_steps=13 format=3 uid="uid://xfdek568835n"]
 
+[ext_resource type="Script" path="res://Scripts/TestBox.gd" id="1_qqhea"]
 [ext_resource type="PackedScene" uid="uid://ddt2jrub87b0l" path="res://scenes/enemy_test.tscn" id="1_sj8la"]
 [ext_resource type="PackedScene" uid="uid://bxnd1wjqw7e0h" path="res://scenes/Character.tscn" id="1_tsuls"]
 [ext_resource type="Script" path="res://Scripts/muisc_test.gd" id="4_52ck1"]
@@ -60,18 +61,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.15177, 0, 0)
 material_override = SubResource("StandardMaterial3D_yemvg")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("1_qqhea")
 
 [node name="BOX2" type="CSGBox3D" parent="World/NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0787, 0, 0)
 use_collision = true
 size = Vector3(3, 3, 3)
 material = SubResource("StandardMaterial3D_bv1me")
+script = ExtResource("1_qqhea")
 
 [node name="BOX3" type="CSGBox3D" parent="World/NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.17906, 0, 0)
 use_collision = true
 size = Vector3(7, 7, 7)
 material = SubResource("StandardMaterial3D_jc0ir")
+script = ExtResource("1_qqhea")
 
 [node name="EnemyTest" parent="World/NavigationRegion3D" instance=ExtResource("1_sj8la")]
 transform = Transform3D(-0.998191, 0, -0.0601253, 0, 1, 0, 0.0601253, 0, -0.998191, -8.54464, 1.76839, 10.7943)

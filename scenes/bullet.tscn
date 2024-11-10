@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://d4bbnem5ibpgj"]
+[gd_scene load_steps=7 format=3 uid="uid://d4bbnem5ibpgj"]
 
 [ext_resource type="Script" path="res://Scripts/Bullet.gd" id="1_n86y8"]
 [ext_resource type="Script" path="res://Scripts/RayCast3D.gd" id="2_a1cfi"]
@@ -6,6 +6,10 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_1aeqp"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_1fvc0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o4gpo"]
+albedo_color = Color(0.494118, 0.6, 0.823529, 1)
+emission_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_etwar"]
 
@@ -19,6 +23,7 @@ shape = SubResource("BoxShape3D_1aeqp")
 transform = Transform3D(0.275614, 0, 0, 0, 0.273801, 0, 0, 0, 2.34046, 0, 0, 0)
 mesh = SubResource("BoxMesh_1fvc0")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_o4gpo")
 
 [node name="Area3D" type="Area3D" parent="."]
 
