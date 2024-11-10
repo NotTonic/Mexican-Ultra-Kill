@@ -134,3 +134,4 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_cky3f")
+expand_mode = 1

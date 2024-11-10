@@ -20,6 +20,7 @@ var dashes = 3.0
 #bullet
 var bullet = load("res://scenes/bullet.tscn")
 var instance
+var shot = false
 var cooldown = true
 var jumps = 2
 #PAUSE MENU EVENT
@@ -41,17 +42,27 @@ func _input(event):
 func _physics_process(delta):
 	#my own inputs
 	if Input.is_action_pressed("shoot") and cooldown == true:
+		shot = true
+	if shot == true:
 		cooldown = false
+		
 		instance = bullet.instantiate()
 		instance.position = hand_gun.global_position
 		instance.transform.basis = hand_gun.global_transform.basis
 		
 		animation.play("shoot")
+		
 		get_parent().add_child(instance)
 		await get_tree().create_timer(1.0).timeout
 		get_parent().remove_child(instance)
 		cooldown = true
 		
+	if shot == true:
+		
+		animation.play("shoot")
+		shot = false
+	else:
+		animation.play("RESET")
 	if dashes < 3:
 		dashes+=0.01
 		print(dashes)
