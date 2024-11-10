@@ -1,2 +1,5 @@
-res://scenes/player.tscn
-res://scenes/CrossHairTest.gd
+res://scenes/Character.tscn
+res://Scripts/player.gd
+res://scenes/test.tscn
+res://scenes/enemy_test.tscn
+res://scenes/particle_test.tscn
