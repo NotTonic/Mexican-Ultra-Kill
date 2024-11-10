@@ -8,8 +8,8 @@
 [sub_resource type="BoxMesh" id="BoxMesh_1fvc0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o4gpo"]
-albedo_color = Color(0.494118, 0.6, 0.823529, 1)
 emission_enabled = true
+emission = Color(0.268935, 0.243924, 0.218884, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_etwar"]
 
