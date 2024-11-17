@@ -2,3 +2,6 @@ res://scenes/test.tscn
 res://scenes/enemy_test.tscn
 res://scenes/Character.tscn
 res://scenes/bullet.tscn
+res://flying enemy.gd
+res://Scripts/flying_enemy.gd
+res://scenes/flying_box.tscn

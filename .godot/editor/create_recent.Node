@@ -1,6 +1,9 @@
+TextureRect
+MeshInstance3D
+CharacterBody3D
+Node3D
 GPUParticles3D
 CollisionShape3D
 Area3D
 RayCast3D
-MeshInstance3D
 RigidBody3D

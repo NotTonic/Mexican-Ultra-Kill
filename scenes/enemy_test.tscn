@@ -76,7 +76,7 @@ albedo_color = Color(0.2717, 0.34919, 0.395881, 1)
 roughness = 0.905882
 emission_enabled = true
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_x3l7s"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_6kati"]
 _surfaces = [{
 "aabb": AABB(-87.2017, 1.29208, -49.2904, 90.8377, 151.239, 98.5809),
 "format": 34896613377,
@@ -194,11 +194,11 @@ _surfaces = [{
 "vertex_data": PackedByteArray("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")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_x3l7s")
+shadow_mesh = SubResource("ArrayMesh_6kati")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_f6qr7"]
 
-[node name="EnemyTest" type="CharacterBody3D"]
+[node name="GoundEnemy" type="CharacterBody3D"]
 script = SubResource("GDScript_wwgxw")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

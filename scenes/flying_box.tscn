@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://b7ikdbsuyq8tg"]
+
+[ext_resource type="Script" path="res://Scripts/flying_enemy.gd" id="1_5ltyi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_372sm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0muf0"]
+albedo_color = Color(0.960784, 0, 0.117647, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2v7ha"]
+material = SubResource("StandardMaterial3D_0muf0")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e0v5n"]
+
+[node name="Flying Box" type="CharacterBody3D"]
+script = ExtResource("1_5ltyi")
+player_path = null
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+navigation_layers = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00595093, 0.0156631)
+shape = SubResource("BoxShape3D_372sm")
+
+[node name="BOX" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_2v7ha")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+visible = false
+shape = SubResource("BoxShape3D_e0v5n")
