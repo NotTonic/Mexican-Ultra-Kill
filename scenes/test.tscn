@@ -55,18 +55,24 @@ navigation_mesh = SubResource("NavigationMesh_f3o5x")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.316833, 0, 1.0791)
 material_override = SubResource("StandardMaterial3D_p74wb")
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(40, 1, 40)
 
 [node name="BOX1" type="CSGBox3D" parent="World/NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.15177, 0, 0)
 material_override = SubResource("StandardMaterial3D_yemvg")
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(5, 5, 5)
 script = ExtResource("1_qqhea")
 
 [node name="BOX2" type="CSGBox3D" parent="World/NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0787, 0, 0)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(3, 3, 3)
 material = SubResource("StandardMaterial3D_bv1me")
 script = ExtResource("1_qqhea")
@@ -74,6 +80,8 @@ script = ExtResource("1_qqhea")
 [node name="BOX3" type="CSGBox3D" parent="World/NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.17906, 0, 0)
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(7, 7, 7)
 material = SubResource("StandardMaterial3D_jc0ir")
 script = ExtResource("1_qqhea")

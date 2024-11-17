@@ -3,3 +3,4 @@ res://scenes/Character.tscn
 res://scenes/enemy_test.tscn
 res://scenes/bullet.tscn
 res://Scripts/player.gd
+res://Scripts/Bullet.gd

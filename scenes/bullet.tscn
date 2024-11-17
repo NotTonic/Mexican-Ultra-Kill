@@ -16,6 +16,8 @@ emission_energy_multiplier = 21.5
 [sub_resource type="BoxShape3D" id="BoxShape3D_etwar"]
 
 [node name="Bullet" type="RigidBody3D"]
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_n86y8")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -28,9 +30,13 @@ skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_o4gpo")
 
 [node name="Area3D" type="Area3D" parent="."]
+collision_layer = 3
+collision_mask = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 shape = SubResource("BoxShape3D_etwar")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
 script = ExtResource("2_a1cfi")
+
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]

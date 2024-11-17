@@ -23,9 +23,8 @@ func dashSustain(direction):
 	velocity.y = 5
 	
 	while dashing == true:
-		print(\"make the dash stuff\")
+		
 		velocity.y -= 0.5
-		print(velocity)
 		
 		await get_tree().create_timer(0.05).timeout
 	##print(\"heck yes\")
@@ -73,6 +72,7 @@ func _process(_delta):
 		
 func _on_area_3d_area_entered(area: Area3D) -> void:
 	health -= 20
+	print(\"damaged\")
 "
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_tbg2r"]
