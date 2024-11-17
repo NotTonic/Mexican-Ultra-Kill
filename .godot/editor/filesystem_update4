@@ -1,4 +1,5 @@
 res://scenes/test.tscn
-res://scenes/enemy_test.tscn
 res://scenes/Character.tscn
+res://scenes/enemy_test.tscn
 res://scenes/bullet.tscn
+res://Scripts/player.gd

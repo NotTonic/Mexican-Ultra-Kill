@@ -86,11 +86,11 @@ func _physics_process(delta):
 	if Input.is_action_pressed("dash") and dashes>=1 and not dashing:
 		dashing = true
 		dashes-=1
-		print(dashes)
+		#print(dashes)
 		if direction==Vector3(0,0,0):
 			direction = camera.project_ray_normal(Vector2(1152/2,649/2))
 			direction.y=0
-		print(direction*20)
+		#print(direction*20)
 		velocity = direction*20
 		await get_tree().create_timer(0.3).timeout
 		dashing=false
