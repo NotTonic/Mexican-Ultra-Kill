@@ -8,8 +8,10 @@
 [sub_resource type="BoxMesh" id="BoxMesh_1fvc0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o4gpo"]
+albedo_color = Color(0, 0, 0, 1)
 emission_enabled = true
-emission = Color(0.268935, 0.243924, 0.218884, 1)
+emission = Color(0.203787, 0.18355, 0.163285, 1)
+emission_energy_multiplier = 21.5
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_etwar"]
 
@@ -28,7 +30,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_o4gpo")
 [node name="Area3D" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_etwar")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]

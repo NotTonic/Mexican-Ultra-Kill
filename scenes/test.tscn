@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://xfdek568835n"]
+[gd_scene load_steps=14 format=3 uid="uid://xfdek568835n"]
 
 [ext_resource type="Script" path="res://Scripts/TestBox.gd" id="1_qqhea"]
 [ext_resource type="PackedScene" uid="uid://ddt2jrub87b0l" path="res://scenes/enemy_test.tscn" id="1_sj8la"]
 [ext_resource type="PackedScene" uid="uid://bxnd1wjqw7e0h" path="res://scenes/Character.tscn" id="1_tsuls"]
 [ext_resource type="Script" path="res://Scripts/muisc_test.gd" id="4_52ck1"]
+[ext_resource type="AudioStream" uid="uid://cqy5synea54r2" path="res://assets/Music/Casa Bossa Nova.mp3" id="4_rxx04"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_d857d"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -85,6 +86,7 @@ player_path = NodePath("../../player")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.96893, 2.52573, 8.04179)
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_rxx04")
 volume_db = 65.701
 autoplay = true
 script = ExtResource("4_52ck1")
