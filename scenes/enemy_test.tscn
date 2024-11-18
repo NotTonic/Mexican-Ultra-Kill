@@ -7,35 +7,65 @@ var player = null
 
 var speed = 5.0
 var dashing = false
+var dashCD = false
 var health = 100
 @export var player_path : NodePath
 @onready var this = get_node(\"Chicken\")
 @onready var nav_agent = $NavigationAgent3D
 var this_pos 
+var look = true
 
 func _ready():
 	player = get_node(player_path)
 
-
-
-func _process(_delta):
+func dashSustain(direction):
+	velocity = global_transform.basis.z*-10
+	velocity.y = 5
 	
+	while dashing == true:
+		print(\"make the dash stuff\")
+		velocity.y -= 0.5
+		print(velocity)
+		
+		await get_tree().create_timer(0.05).timeout
+	##print(\"heck yes\")
+
+
+
+func walkTowards():
 	velocity = Vector3.ZERO
 	nav_agent.set_target_position(player.global_transform.origin)
 	var next_nav_point = nav_agent.get_next_path_position()
 	velocity = (next_nav_point - global_transform.origin).normalized() * speed
-	
 
-	look_at(Vector3(player.global_transform.origin.x, global_transform.origin.y, player.global_transform.origin.z), Vector3.UP) #looks at player
 
-	
 
+func _process(_delta):
 	move_and_slide()
 	if dashing == false:
 		this_pos = this.global_transform.origin
-	if (player.global_transform.origin).distance_to(this_pos) <= 5:
+		walkTowards()
+		
+	if look == true:
+		look_at(Vector3(player.global_transform.origin.x, global_transform.origin.y, player.global_transform.origin.z), Vector3.UP) #looks at player
+		
+	if (player.global_transform.origin).distance_to(this_pos) <= 5 and dashCD == false:
+		print(\"dashing\")
 		dashing = true
-		speed = 20
+		dashCD = true
+		velocity = Vector3.ZERO
+		await get_tree().create_timer(1).timeout
+		look = false
+		dashSustain(player.global_transform.origin)
+		##speed = 100
+		await get_tree().create_timer(1).timeout
+		dashing = false
+		look = true
+		print(\"notdashing\")
+		await get_tree().create_timer(2).timeout
+		dashCD = false
+		##speed = 5
+		print(\"offcooldown\")
 	else:
 		speed = 5
 	if health == 0:

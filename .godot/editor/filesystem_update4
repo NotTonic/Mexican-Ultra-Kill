@@ -5,3 +5,10 @@ res://scenes/bullet.tscn
 res://flying enemy.gd
 res://Scripts/flying_enemy.gd
 res://scenes/flying_box.tscn
+res://Scripts/Bullet.gd
+res://assets/CrossHairTest.gd
+res://Scripts/muisc_test.gd
+res://Scripts/PauseMenu.gd
+res://Scripts/player.gd
+res://Scripts/RayCast3D.gd
+res://Scripts/TestBox.gd
