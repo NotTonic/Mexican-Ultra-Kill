@@ -1,11 +1,50 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731884420
+::res://::1731902383
 export_presets.cfg::TextFile::-1::1731540567::0::1::::<><>::
-::res://assets/::1731825106
-Chicken.glb::PackedScene::1281290233248086896::1731122630::1731216204::1::::<><>::
-crosshair.png::CompressedTexture2D::2816945488403513483::1731122630::1731216200::1::::<><>::
-hand_gun.glb::PackedScene::8097750447749946947::1731122630::1731216204::1::::<><>::
-::res://assets/Draw/::1731216537
+::res://assets/::1731903287
+::res://assets/3d/::1731903312
+Chicken.glb::PackedScene::1281290233248086896::1731122630::1731903181::1::::<><>::
+crosshair.png::CompressedTexture2D::2816945488403513483::1731122630::1731903179::1::::<><>::
+hand_gun.glb::PackedScene::8097750447749946947::1731122630::1731903181::1::::<><>::
+::res://assets/3d/OBJ format/::1731903314
+driveway_long.obj::Mesh::5025606570910551183::1731903312::1731903318::1::::<><>::
+driveway_short.obj::Mesh::6015110116004234727::1731903312::1731903318::1::::<><>::
+fence_large.obj::Mesh::2130523940404583992::1731903312::1731903318::1::::<><>::
+fence_medium.obj::Mesh::7411291889796555867::1731903312::1731903318::1::::<><>::
+fence_open.obj::Mesh::2360050957606249831::1731903312::1731903318::1::::<><>::
+fence_rectangle.obj::Mesh::4716320341194712235::1731903312::1731903318::1::::<><>::
+fence_short.obj::Mesh::956528835167455672::1731903312::1731903318::1::::<><>::
+fence_small.obj::Mesh::699574931888776812::1731903312::1731903318::1::::<><>::
+fence_wide.obj::Mesh::1996474896049648534::1731903313::1731903318::1::::<><>::
+house_type01.obj::Mesh::5195005378987114563::1731903313::1731903318::1::::<><>::
+house_type02.obj::Mesh::2266482156329292204::1731903313::1731903318::1::::<><>::
+house_type03.obj::Mesh::3024476693843566507::1731903313::1731903318::1::::<><>::
+house_type04.obj::Mesh::7482710446709854682::1731903313::1731903318::1::::<><>::
+house_type05.obj::Mesh::4936838113844516955::1731903313::1731903318::1::::<><>::
+house_type06.obj::Mesh::5124571076599954762::1731903313::1731903318::1::::<><>::
+house_type07.obj::Mesh::1343142142159238014::1731903313::1731903318::1::::<><>::
+house_type08.obj::Mesh::5272464473714629595::1731903313::1731903319::1::::<><>::
+house_type09.obj::Mesh::4428585066570020501::1731903313::1731903319::1::::<><>::
+house_type10.obj::Mesh::7989052465775312417::1731903313::1731903318::1::::<><>::
+house_type11.obj::Mesh::2586512763158605798::1731903313::1731903318::1::::<><>::
+house_type12.obj::Mesh::5403206849164370372::1731903313::1731903318::1::::<><>::
+house_type13.obj::Mesh::2641899661228761537::1731903313::1731903318::1::::<><>::
+house_type14.obj::Mesh::4677280346386248471::1731903313::1731903318::1::::<><>::
+house_type15.obj::Mesh::2168275868014318944::1731903313::1731903318::1::::<><>::
+house_type16.obj::Mesh::2945615627842018671::1731903313::1731903318::1::::<><>::
+house_type17.obj::Mesh::914248276205813482::1731903313::1731903318::1::::<><>::
+house_type18.obj::Mesh::26324384835313594::1731903313::1731903318::1::::<><>::
+house_type19.obj::Mesh::3110027376565730123::1731903313::1731903318::1::::<><>::
+house_type20.obj::Mesh::4552056348614130561::1731903313::1731903318::1::::<><>::
+house_type21.obj::Mesh::1309442349943384860::1731903313::1731903318::1::::<><>::
+path_long.obj::Mesh::8416839600795771414::1731903314::1731903318::1::::<><>::
+path_short.obj::Mesh::7035361863265423089::1731903314::1731903318::1::::<><>::
+path_tilesLong.obj::Mesh::2454076894403362332::1731903314::1731903318::1::::<><>::
+path_tilesShort.obj::Mesh::3394514793013309594::1731903314::1731903318::1::::<><>::
+tree_large.obj::Mesh::7543621571044372485::1731903314::1731903318::1::::<><>::
+tree_small.obj::Mesh::4164944339118487483::1731903314::1731903318::1::::<><>::
+::res://assets/Draw/::1731903141
+CrossHairTest.gd::GDScript::-1::1731886772::0::1::::<>TextureRect<>::
 icon.svg::CompressedTexture2D::5021601465195102953::1731122630::1731216537::1::::<><>::
 New Piskel-1.png.png::CompressedTexture2D::6166076577997296065::1731122630::1731216200::1::::<><>::
 ::res://assets/Draw/GunSprite Test/::1731216204
@@ -14,22 +53,22 @@ Screenshot_4-11-2024_214132_.jpeg::CompressedTexture2D::6649342869939671610::173
 Screenshot_4-11-2024_214146_.jpeg::CompressedTexture2D::7916017232731566607::1731122630::1731216200::1::::<><>::
 Screenshot_4-11-2024_214212_.jpeg::CompressedTexture2D::6176113482817399394::1731122630::1731216200::1::::<><>::
 SpriteSheet1.png::CompressedTexture2D::1054800648777705440::1731122630::1731216204::1::::<><>::
-::res://assets/Music/::1731825110
+::res://assets/Music/::1731903128
 Casa Bossa Nova.mp3::AudioStreamMP3::5947262866591252737::1731825069::1731825110::1::::<><>::
-::res://scenes/::1731884420
-bullet.tscn::PackedScene::9196887056654696025::1731883982::0::1::::<><>::res://Scripts/Bullet.gd<>res://Scripts/RayCast3D.gd
-Character.tscn::PackedScene::4027830749965021961::1731883982::0::1::::<><>::res://Scripts/player.gd<>res://Scripts/RayCast3D.gd<>uid://pa7oa66t5rcy::::res://assets/Draw/GunSprite Test/SpriteSheet1.png<>uid://ct35m6x330d02::::res://assets/Draw/New Piskel-1.png.png
-CrossHairTest.gd::GDScript::-1::1731216276::0::1::::<>TextureRect<>::
-enemy_test.tscn::PackedScene::7410708114154209681::1731884083::0::1::::<><>::
-flying_box.tscn::PackedScene::4649591310723272720::1731884411::0::1::::<><>::res://Scripts/flying_enemy.gd
+Town talk 7.mp3::AudioStreamMP3::8270861767155951768::1731902545::1731902549::1::::<><>::
+::res://scenes/::1731902801
+bullet.tscn::PackedScene::9196887056654696025::1731896889::0::1::::<><>::res://Scripts/Bullet.gd<>res://Scripts/RayCast3D.gd
+Character.tscn::PackedScene::4027830749965021961::1731886220::0::1::::<><>::res://Scripts/player.gd<>res://Scripts/RayCast3D.gd<>uid://pa7oa66t5rcy::::res://assets/Draw/GunSprite Test/SpriteSheet1.png<>uid://ct35m6x330d02::::res://assets/Draw/New Piskel-1.png.png
+enemy_test.tscn::PackedScene::7410708114154209681::1731902801::0::1::::<><>::
+flying_box.tscn::PackedScene::4649591310723272720::1731902801::0::1::::<><>::res://Scripts/flying_enemy.gd
 particle_test.tscn::PackedScene::7544921434274734113::1731556087::0::1::::<><>::
-test.tscn::PackedScene::1624855159630524273::1731883982::0::1::::<><>::res://Scripts/TestBox.gd<>uid://ddt2jrub87b0l::::res://scenes/enemy_test.tscn<>uid://bxnd1wjqw7e0h::::res://scenes/Character.tscn<>res://Scripts/muisc_test.gd<>uid://cqy5synea54r2::::res://assets/Music/Casa Bossa Nova.mp3
-::res://Scripts/::1731884411
-Bullet.gd::GDScript::-1::1731267140::0::1::::<>Node3D<>::
+test.tscn::PackedScene::1624855159630524273::1731902801::0::1::::<><>::res://Scripts/TestBox.gd<>uid://ddt2jrub87b0l::::res://scenes/enemy_test.tscn<>uid://bxnd1wjqw7e0h::::res://scenes/Character.tscn<>res://Scripts/muisc_test.gd<>uid://cqy5synea54r2::::res://assets/Music/Casa Bossa Nova.mp3<>uid://b7ikdbsuyq8tg::::res://scenes/flying_box.tscn<>uid://dp3p5c71qr3vw::::res://assets/Music/Town talk 7.mp3
+::res://Scripts/::1731902716
+Bullet.gd::GDScript::-1::1731896889::0::1::::<>Node3D<>::
 enemy_test.gd::GDScript::-1::1731122630::0::1::::<>CharacterBody3D<>::
-flying_enemy.gd::GDScript::-1::1731884411::0::1::::<>CharacterBody3D<>::
-muisc_test.gd::GDScript::-1::1731122630::0::1::::<>AudioStreamPlayer3D<>::
-PauseMenu.gd::GDScript::-1::1731122630::0::1::::<>ColorRect<>::
-player.gd::GDScript::-1::1731273033::0::1::::<>CharacterBody3D<>::
-RayCast3D.gd::GDScript::-1::1731122630::0::1::::<>RayCast3D<>::
-TestBox.gd::GDScript::-1::1731122630::0::1::::<>CSGBox3D<>::
+flying_enemy.gd::GDScript::-1::1731886772::0::1::::<>CharacterBody3D<>::
+muisc_test.gd::GDScript::-1::1731886773::0::1::::<>AudioStreamPlayer3D<>::
+PauseMenu.gd::GDScript::-1::1731886773::0::1::::<>ColorRect<>::
+player.gd::GDScript::-1::1731902716::0::1::::<>CharacterBody3D<>::
+RayCast3D.gd::GDScript::-1::1731886773::0::1::::<>RayCast3D<>::
+TestBox.gd::GDScript::-1::1731886773::0::1::::<>CSGBox3D<>::

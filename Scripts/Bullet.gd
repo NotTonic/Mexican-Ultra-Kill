@@ -12,3 +12,8 @@ func _ready():
 func _process(delta):
 	position += transform.basis * Vector3(0,0, speed) * delta
 	##on_area_3d_area_entered(a)
+
+
+
+func _on_area_3d_area_entered(area: Area3D) -> void:
+	queue_free()

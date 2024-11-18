@@ -1,7 +1,7 @@
-TextureRect
 MeshInstance3D
-CharacterBody3D
 Node3D
+TextureRect
+CharacterBody3D
 GPUParticles3D
 CollisionShape3D
 Area3D
